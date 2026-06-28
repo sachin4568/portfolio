@@ -198,11 +198,17 @@ nav {
   width: 100%; height: 100%;
   object-fit: cover;
   position: absolute; inset: 0;
+  z-index: 1;
+}
+.hero-photo img + .hero-photo-placeholder {
+  display: none;
 }
 .hero-photo-placeholder {
   display: flex; flex-direction: column;
   align-items: center; gap: 0.6rem;
   color: var(--text-dim);
+  position: relative;
+  z-index: 0;
 }
 .hero-photo-placeholder svg { width: 40px; height: 40px; opacity: 0.4; }
 .hero-photo-placeholder span { font-size: 0.72rem; text-align: center; line-height: 1.4; max-width: 120px; }
